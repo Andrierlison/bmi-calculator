@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>Calculadora IMC</title>
+		<title>Calculadora de IMC</title>
+		<script src="https://kit.fontawesome.com/57ded0e204.js" crossorigin="anonymous"></script>
 		<meta charset="utf-8">
-		<meta name="theme-color" content="#000000">
-		<link rel="stylesheet" href="./estilos/estilos.css">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="styles/styles.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 	</head>
 	<body>
 		<header>
 			<h1>Calculadora de IMC</h1>
 		</header>
+		<article id="informacoes">
+			<h2>O que é o IMC?</h2>
+			<p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+			<p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>	
+		</article>
 		<article id="calculadora">
-		<h2>Simples e Fácil</h2>
 			<input type="number" id="kg" value="" placeholder="Digite seu peso...">
 			<input type="number" id="m" value="" placeholder="E aqui sua altura!">
 			<button onclick="calcularImc()">Calcular</button>
 			<p id="resultado">O resultado vai aparecer aqui!</p>
 			<p id="imc"></p>
 		</article>
-		<article id="informacoes">
-			<h2>Sobre o IMC</h2>
-			<p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
-			<p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>	
-		</article>
 		<footer>
-		    <p>FEITO POR ANDRIERLISON</p>
+			<ul>
+				<li><h4>CONTATO</h4></li>
+                <li><a href="https://www.linkedin.com/in/andrierlison-da-silva-916775190/" target="_blank"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+                <li><a href="https://github.com/Andrierlison" target="_blank"><i class="fab fa-github-alt"></i>github.com/Andrierlison</a></li>
+                <li><a href="mailto:andrierlisonsilva8@gmail.com"><i class="fas fa-envelope"></i>andrierlisonsilva8@gmail.com</a></li>
+            </ul>
+		    <p>DESENVOLVIDO POR ANDRIERLISON</p>
 		</footer>
 		<script src="./scripts/calcular_imc.js"></script>
 	</body>
