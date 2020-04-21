@@ -22,7 +22,7 @@ header h1 {
 }
 #calculadora input {
   display: block;
-  margin: auto;
+  margin: 10px auto;
   height: 30px;
   border: none;
   padding: 10px;
@@ -30,7 +30,7 @@ header h1 {
 }
 #calculadora button {
   display: block;
-  margin: auto;
+  margin: 5px auto;
   padding: 15px;
   border-radius: 8px;
   width: 200px;
