@@ -13,18 +13,54 @@
 		<header>
 			<h1>Calculadora de IMC</h1>
 		</header>
-		<article id="informacoes">
-			<h2>O que é o IMC?</h2>
-			<p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
-			<p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>	
-		</article>
-		<article id="calculadora">
-			<input type="number" id="kg" value="" placeholder="Digite seu peso...">
-			<input type="number" id="m" value="" placeholder="E aqui sua altura!">
-			<button onclick="calcularImc()">Calcular</button>
-			<p id="resultado">O resultado vai aparecer aqui!</p>
-			<p id="imc"></p>
-		</article>
+		<main>
+			<article id="informacoes">
+				<h2>O que é o IMC?</h2>
+				<p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+				<p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>	
+			</article>
+			<article id="calculadora">
+				<input type="number" id="kg" value="" placeholder="Digite seu peso...">
+				<input type="number" id="m" value="" placeholder="E aqui sua altura!">
+				<button onclick="calcularImc()">Calcular</button>
+				<p id="resultado">O resultado vai aparecer aqui!</p>
+				<p id="imc"></p>
+			</article>
+			<article id="tabela">
+				<table>
+					<thead>
+						<tr>
+							<td>IMC</td>
+							<td>Resultado</td>
+						</tr>
+					</thead>
+					<tr>
+						<td>Menos do que 18,5</td>
+						<td>Abaixo do peso</td>
+					</tr>
+					<tr>
+						<td>Entre 18,5 e 24,9</td>
+						<td>Peso normal</td>
+					</tr>
+					<tr>
+						<td>Entre 25 e 29,9</td>
+						<td>Sobrepeso</td>
+					</tr>
+					<tr>
+						<td>Entre 30 e 34,9</td>
+						<td>Obesidade grau 1</td>
+					</tr>
+					<tr>
+						<td>Entre 35 e 39,9</td>
+						<td>Obesidade grau 2</td>
+					</tr>
+					<tr>
+						<td>Mais do que 40</td>
+						<td>Obesidade grau 3</td>
+					</tr>
+				</table>
+			</article>
+		</main>
 		<footer>
 			<ul>
 				<li><h4>CONTATO</h4></li>
