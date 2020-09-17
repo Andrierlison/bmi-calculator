@@ -1,74 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>CALCULADORA DE IMC</title>
-		<script src="https://kit.fontawesome.com/57ded0e204.js" crossorigin="anonymous"></script>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-	</head>
-	<body>
-		<header>
-			<h1>CALCULADORA DE IMC</h1>
-		</header>
-		<main>
-			<article id="informacoes">
-				<h2>O que é o IMC?</h2>
-				<p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
-				<p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>	
-			</article>
-			<article id="calculadora">
-				<input type="number" id="kg" value="" placeholder="Digite seu peso...">
-				<input type="number" id="m" value="" placeholder="E aqui sua altura!">
-				<button onclick="calcularImc()">Calcular</button>
-				<p id="resultado">O resultado vai aparecer aqui!</p>
-				<p id="imc"></p>
-			</article>
-			<article id="tabela">
-				<table>
-					<thead>
-						<tr>
-							<td>IMC</td>
-							<td>Resultado</td>
-						</tr>
-					</thead>
+<head>
+	<title>CALCULADORA DE IMC</title>
+	<script src="https://kit.fontawesome.com/57ded0e204.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+</head>
+<body>
+	<header class="mainHeader">
+		<h1>CALCULADORA DE IMC</h1>
+	</header>
+	<main>
+		<article class="description">
+			<h2>O que é o IMC?</h2>
+			<p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para
+				calcular o peso ideal de cada pessoa.</p>
+			<p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao
+				quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+		</article>
+		<article>
+			<h3>Descubra seu IMC</h3>
+			<hr>
+			<input type="number" id="kg" value="" placeholder="Digite seu peso...">
+			<input type="number" id="m" value="" placeholder="E aqui sua altura!">
+			<button onclick="calculateBmi()">Calcular</button>
+			<p class="results" id="result">O resultado vai aparecer aqui!</p>
+			<p class="results" id="imc"></p>
+		</article>
+		<article>
+			<h3>Tabela</h3>
+			<table class="tableInfo">
+				<thead>
 					<tr>
-						<td>Menos do que 18,5</td>
-						<td>Abaixo do peso</td>
+						<td>IMC</td>
+						<td>Resultado</td>
 					</tr>
-					<tr>
-						<td>Entre 18,5 e 24,9</td>
-						<td>Peso normal</td>
-					</tr>
-					<tr>
-						<td>Entre 25 e 29,9</td>
-						<td>Sobrepeso</td>
-					</tr>
-					<tr>
-						<td>Entre 30 e 34,9</td>
-						<td>Obesidade grau 1</td>
-					</tr>
-					<tr>
-						<td>Entre 35 e 39,9</td>
-						<td>Obesidade grau 2</td>
-					</tr>
-					<tr>
-						<td>Mais do que 40</td>
-						<td>Obesidade grau 3</td>
-					</tr>
-				</table>
-			</article>
-		</main>
-		<footer>
-			<ul>
-				<li><h4>CONTATO</h4></li>
-                <li><a href="https://www.linkedin.com/in/andrierlison-da-silva-916775190/" target="_blank"><i class="fab fa-linkedin-in"></i>Linkedin/andrierlison-da-silva</a></li>
-                <li><a href="https://github.com/Andrierlison" target="_blank"><i class="fab fa-github-alt"></i>Github.com/Andrierlison</a></li>
-				        <li><a href="mailto:andrierlisonsilva8@gmail.com"><i class="fas fa-envelope"></i>andrierlisonsilva8@gmail.com</a></li>
-            </ul>
-		    <p>DESENVOLVIDO POR ANDRIERLISON</p>
-		</footer>
-		<script src="./js/calcular_imc.js"></script>
-	</body>
+				</thead>
+				<tr>
+					<td>Menos do que 18,5</td>
+					<td>Abaixo do peso</td>
+				</tr>
+				<tr>
+					<td>Entre 18,5 e 24,9</td>
+					<td>Peso normal</td>
+				</tr>
+				<tr>
+					<td>Entre 25 e 29,9</td>
+					<td>Sobrepeso</td>
+				</tr>
+				<tr>
+					<td>Entre 30 e 34,9</td>
+					<td>Obesidade grau 1</td>
+				</tr>
+				<tr>
+					<td>Entre 35 e 39,9</td>
+					<td>Obesidade grau 2</td>
+				</tr>
+				<tr>
+					<td>Mais do que 40</td>
+					<td>Obesidade grau 3</td>
+				</tr>
+			</table>
+		</article>
+	</main>
+	<footer>
+		<ul>
+			<li>
+				<a href="https://www.linkedin.com/in/andrierlison-da-silva-916775190/" target="_blank">
+					<i class="fab fa-linkedin-in"></i>Linkedin/andrierlison-da-silva
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/Andrierlison" target="_blank">
+					<i class="fab fa-github-alt"></i>Github.com/Andrierlison
+				</a>
+			</li>
+			<li><a href="mailto:andrierlisonsilva8@gmail.com"><i
+						class="fas fa-envelope"></i>andrierlisonsilva8@gmail.com</a></li>
+		</ul>
+		<p id="developer">DESENVOLVIDO POR ANDRIERLISON</p>
+	</footer>
+	<script src="./js/calculateBmi.js"></script>
+</body>
 </html>

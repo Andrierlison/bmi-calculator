@@ -1,105 +1,112 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  --color1: #000;
+  --color2: #fff;
+  --color3: #999999;
 }
 
 body {
   width: 100%;
   height: 100%;
-  font-family: "Roboto", sans-serif;
 }
 
-header h1 {
+.mainHeader {
+  background-color: var(--color1);
+  color: var(--color2);
+  width: 100%;
+}
+
+.mainHeader h1 {
   padding: 30px;
   text-align: center;
 }
 
-#calculadora {
-  display: block;
-  margin: auto;
-  width: 100%;
-  max-width: 700px;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-input,
-button {
-  background-color: #c1c1c1;
-  display: block;
-  margin: 20px auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 400px;
-  border: none;
-  border-radius: 10px;
+.description {
+  max-width: 550px;
+  margin-bottom: 30px;
 }
 
-#calculadora p {
-  padding: 20px;
+.description h2 {
+  padding: 15px;
 }
 
-#informacoes {
-  max-width: 700px;
-  display: block;
-  margin: 2vh auto;
-}
-
-#informacoes h2 {
-  padding: 10px;
-}
-
-#informacoes p {
+.description p {
   text-align: justify;
-  padding: 10px;
+  margin: 14px;
 }
 
-#tabela {
-  max-width: 700px;
+input {
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px auto;
+  background-color: var(--color3);
+}
+
+input::placeholder {
+  color: var(--color2);
+}
+
+button {
+  border: none;
+  border-radius: 8px;
   display: block;
-  margin: 20px auto;
+  padding: 16px;
+  margin: 5px auto;
 }
 
-#tabela table {
-  width: 100%
+button:focus {
+  background-color: var(--color3);
+  color: var(--color2);
 }
 
-#tabela thead td {
-  background-color: #c1c1c1;
+.results {
+  margin: 32px auto;
 }
 
-#tabela tr {
-  width: 100%;
+.tableInfo {
+  border: solid 1px var(--color3);
+  margin: 16px auto;
 }
 
-#tabela td {
-  padding: 20px;
-  margin: 10px;
-  width: 50%;
-  background-color: #f1f1f1;
+.tableInfo thead {
+  background-color: var(--color3);
+  color: var(--color2);
+}
+
+.tableInfo td {
+  padding: 16px;
 }
 
 footer {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--color1);
+  color: var(--color2);
   width: 100%;
 }
 
-footer h4 {
-  padding: 20px;
+footer ul li {
+  margin: 10px;
 }
 
-footer li {
-  padding: 10px;
+footer ul li i {
+  margin: 10px;
 }
 
 footer a {
-  color: #ffffff;
+  color: var(--color2);
 }
 
-footer i {
-  padding: 5px;
-}
-
-footer p {
-  padding: 30px;
+footer #developer {
   text-align: center;
+  padding: 20px;
 }
