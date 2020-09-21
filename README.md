@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="https://andrierlison.github.io/calculadora_de_imc/">🔗BMI Calculator</a>
+    <a href="https://github.com/Andrierlison/bmi-calculator">🔗BMI Calculator</a>
 </h1>
 
 <p align="center">Simple and easy to use, this application quickly calculates BMI (body mass index) showing if you are at the ideal weight for your height.</p>

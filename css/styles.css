@@ -14,6 +14,10 @@ body {
   height: 100%;
 }
 
+li {
+  list-style: none;
+}
+
 .mainHeader {
   background-color: var(--color1);
   color: var(--color2);
@@ -29,6 +33,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+article  h3 {
+  margin: 16px;
 }
 
 .description {
@@ -50,6 +58,7 @@ input {
   border-radius: 8px;
   padding: 16px;
   margin: 16px auto;
+  display: block;
   background-color: var(--color3);
 }
 
@@ -71,12 +80,12 @@ button:focus {
 }
 
 .results {
-  margin: 32px auto;
+  margin: 32px;
 }
 
 .tableInfo {
   border: solid 1px var(--color3);
-  margin: 16px auto;
+  margin: 16px;
 }
 
 .tableInfo thead {

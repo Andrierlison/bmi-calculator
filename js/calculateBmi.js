@@ -32,4 +32,3 @@ function calculateBmi() {
   }
   document.getElementById("result").innerHTML = res
 }
-
