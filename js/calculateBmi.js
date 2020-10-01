@@ -1,16 +1,19 @@
+/*main function to calculate bmi*/
 function calculateBmi() {
+  /*geting values from the screen using id */
   let kg = document.getElementById("kg").value
   let m = document.getElementById("m").value
-
+  
+/*Storing data in variables*/
   kg = parseInt(kg)
   m = parseInt(m)
-
+/*calculating the values*/
   let altura = m * m
 
   var res = kg / altura
   res = res * 10000
   res = res.toFixed(1)
-
+/*interpriting bmi and handling error*/
   if (res > 18.5 && res <= 24.9) {
     document.getElementById("imc").innerHTML = "normal"
     document.getElementById("imc").style.color = "green"
@@ -30,5 +33,6 @@ function calculateBmi() {
     document.getElementById("imc").innerHTML = "Abaixo do peso"
     document.getElementById("imc").style.color = "blue"
   }
+  /*providing result*/
   document.getElementById("result").innerHTML = res
 }
