@@ -1,34 +1,39 @@
 function calculateBmi() {
-  let kg = document.getElementById("kg").value
-  let m = document.getElementById("m").value
+  let kg = document.getElementById("kg").value;
+  let m = document.getElementById("m").value;
 
-  kg = parseInt(kg)
-  m = parseInt(m)
+  kg = parseInt(kg);
+  m = parseInt(m);
 
-  let altura = m * m
+  let weight = m * m;
 
-  var res = kg / altura
-  res = res * 10000
-  res = res.toFixed(1)
+  var result = kg / weight;
+  result = result * 10000;
+  result = result.toFixed(1);
 
-  if (res > 18.5 && res <= 24.9) {
-    document.getElementById("imc").innerHTML = "normal"
-    document.getElementById("imc").style.color = "green"
-  } if (res >= 25 && res <= 29.9) {
-    document.getElementById("imc").innerHTML = "sobrepeso"
-    document.getElementById("imc").style.color = "orange"
-  } if (res >= 30 && res <= 34.9) {
-    document.getElementById("imc").innerHTML = "Obesidade grau 1"
-    document.getElementById("imc").style.color = "red"
-  } if (res >= 35 && res <= 40.9) {
-    document.getElementById("imc").innerHTML = "Obesidade grau 2"
-    document.getElementById("imc").style.color = "red"
-  } if (res >= 40) {
-    document.getElementById("imc").innerHTML = "Obesidade grau 3"
-    document.getElementById("imc").style.color = "red"
-  } if (res < 18.5) {
-    document.getElementById("imc").innerHTML = "Abaixo do peso"
-    document.getElementById("imc").style.color = "blue"
+  if (result > 18.5 && result <= 24.9) {
+    document.getElementById("imc").innerHTML = "normal";
+    document.getElementById("imc").style.color = "green";
   }
-  document.getElementById("result").innerHTML = res
+  if (result >= 25 && result <= 29.9) {
+    document.getElementById("imc").innerHTML = "overweight";
+    document.getElementById("imc").style.color = "orange";
+  }
+  if (result >= 30 && result <= 34.9) {
+    document.getElementById("imc").innerHTML = "Obesity degree 1";
+    document.getElementById("imc").style.color = "red";
+  }
+  if (result >= 35 && result <= 40.9) {
+    document.getElementById("imc").innerHTML = "Obesity degree 2";
+    document.getElementById("imc").style.color = "red";
+  }
+  if (result >= 40) {
+    document.getElementById("imc").innerHTML = "Obesity degree 3";
+    document.getElementById("imc").style.color = "red";
+  }
+  if (result < 18.5) {
+    document.getElementById("imc").innerHTML = "Under weight";
+    document.getElementById("imc").style.color = "blue";
+  }
+  document.getElementById("result").innerHTML = result;
 }
