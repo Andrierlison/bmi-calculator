@@ -2,7 +2,7 @@
     <a href="https://andrierlison.github.io/bmi-calculator/">🔗BMI Calculator</a>
 </h1>
 
-<p align="center">Simple and easy to use, this application quickly calculates BMI (body mass index) showing if you are at the ideal weight for your height.</p>
+<h2>Simple and easy to use, this application quickly calculates BMI (body mass index) showing if you are at the ideal weight for your height.</h2>
 
 <p align="center">
     <a href="#technologies">Technologies</a> •
@@ -10,19 +10,19 @@
     <a href="#author">Author</a>
 </p>
 
-<h1 id="technologies">The following tools were used in the construction of the project:</h1>
+<h3 id="technologies">The following tools were used in the construction of the project:</h3>
 
 - [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [Css](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
 
-<h1>Copy</h1>
+<h3>Copy</h3>
 <p>You can feel free to copy the page</p>
 
-<p>Before you begin, you will need to have the following tools installed on your machine<a href="https://git-scm.com">Git</a></p>
+<p>Before you begin, you will need to have the following tools installed on your machine <a href="https://git-scm.com">Git</a></p>
 <p>In addition, it is good to have an editor to work with the code as <a href="https://code.visualstudio.com/">VSCode</a></p>
 
-<h1>Clone this repository</h1>
+<h3>Clone this repository</h3>
 
 ```
 $ git clone https://github.com/Andrierlison/bmi-calculator
