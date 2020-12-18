@@ -19,7 +19,7 @@
 <h3>Copy</h3>
 <p>You can feel free to copy the page</p>
 
-<p>Before you begin, you will need to have the following tools installed on your machine <a href="https://git-scm.com">Git</a></p>
+<p>first you have to install <a href="https://git-scm.com">Git</a> on your machine</p>
 <p>In addition, it is good to have an editor to work with the code as <a href="https://code.visualstudio.com/">VSCode</a></p>
 
 <h3>Clone this repository</h3>
